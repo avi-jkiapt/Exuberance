@@ -1,0 +1,220 @@
+<% include ./partials/header %>
+<div id="exub">
+   <p id="demo"></p>
+   <div id="btn">
+          <button type="submit" style="border: 0; background: transparent"><a href="/register">
+          <img src="/images/register-button.png" width="200" height="70" alt="Enter" /></a>
+          </button>
+   </div>
+   <div id="btn1" class="down"><a href="#exub1"><span></span></a></div>
+</div>
+<div id="exub1">
+       <h1>Exuberance 2018</h1>
+       <p>A welcome ceremony for the new batch of the department is organised by the second year students in the month
+       of October every year. The newbies get a chance to get familiar with the place which is their home for the next
+       four years. The fest gives them a chance to be introduced to the members of J.K. Institute of Applied Physics & 
+       Technology and get acquainted with the convivial environment prevailing in the department.
+       </p>
+       <h2 style="color:blue;text-align:center;">Bollywood Voyage</h2>
+       <p>Fairytale like romances peppered with lavish song-dance sequences shot in exotic locales, gritty underworld flicks,
+       coming of age pangs of 20-somethings, kick-butt action capers to social melodramas and tickle you pink stories -
+       the Indian movies have just about touched every genre of our lives.
+
+       The unfathomable depths of hindi cinema makes it amply clear how little we know of our Indian cinema.
+       As we gear up for exuberance 2k18 we raise a toast to a cinema that's 100 years old, and inspires great national pride in all Indians.
+        So, bon voyage people and feel the waves !</p>
+       <section >
+   <div class="row flex imgchange">
+      <div class="col-lg-8 col-sm-6">
+         <h2>Past Memories</h2>
+         <img id="change" src="/images/b1.jpg">
+         <script>
+             var imageChange = ["/images/b1.jpg","/images/b2.png","/images/b3.jpg","/images/b4.png","/images/b5.png"];
+             var currentImage = 0;
+             setInterval(changeImage, 2500);
+             function changeImage()
+             {
+                currentImage++;
+                 if(currentImage > imageChange.length - 1)
+                 {
+                   currentImage = 0;
+                 }
+                 var change = document.getElementById("change");
+                  change.setAttribute("src",imageChange[currentImage]);
+                 
+             }
+         </script>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+         <h2>Events</h2>
+         <ul>
+            <li><a href="/events">Happy Feet</a></li>
+            <li><a  href="/events">SurKshetra</a></li>
+            <li><a  href="/events">Fashion Street</a></li>
+            <li><a  href="/events">Starry Debut</a></li>
+            <li><a  href="/events">Caravan</a></li>
+         </ul>
+         <img src="/images/logo.jpg" id="logo" alt="logo jk exuberance">
+      </div>
+   </div>
+</section>
+
+</div>
+<div id="exb2">
+     <div class="row wrap">
+         <h1>Exuberance 2k16</h1>
+         <div class="col-lg-8 col-sm-6">
+        <p>The magnificent journey ‘AROUND THE WORLD’ was ready to begin! The flight took off on 24th October, 2016 at 10 A.M. sharp.
+        The passengers were filled with buzz and excitement since it was their first journey of any such kind. The Indian Subcontinent
+        showcased its diversity, the Europe had its aesthetic architecture, the America’s Statue Of Liberty, the Pyramids of Egypt,
+        the African Safari, all blew our minds!
+        </p>
+        <br>
+        <p>Well that was a little introduction of Exuberance 2k16 which welcomed the B.Tech First Year, organized by the B.Tech
+        Second Year. The event started with the Saraswati Vandana and the lighting of the lamp. The distinguished professors
+        came and showered the blessings upon the future engineers. The hard work put up by the organizers could be witnessed in the
+        entire Fresher Function. Starting from the unique decoration to the scintillating performances by the First Year students,
+        each and every segment was full of entertainment and delight. The implementation of the songs, the dances, the acts of
+        drama were up to the mark and well favored. The Personal Interview section provided a platform for the interaction of
+        the newly entered ones with the professors and students. The most ravishing part of the occasion was the RAMP WALK.
+        It had the perfect inclusion of different cultures followed around the world.
+        </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        <img id="myImg" src="/images/news.jpg" alt="jk institute in newspaper" width="350" height="350">
+        <!-- The Modal -->
+         <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+         <div id="caption"></div>
+         </div>
+
+         <script>
+          // Get the modal
+           var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById('myImg');
+               var modalImg = document.getElementById("img01");
+               var captionText = document.getElementById("caption");
+              img.onclick = function(){
+               modal.style.display = "block";
+               modalImg.src = this.src;
+               captionText.innerHTML = this.alt;
+             }
+
+             // Get the <span> element that closes the modal
+                 var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                 span.onclick = function() { 
+                       modal.style.display = "none";
+                             }
+                   </script>
+        
+        </div>
+     </div>
+     <div class="row flex fresh">
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                <img src="/images/c1.png" alt="Event Auspicious">
+                <div class="caption">
+                    <strong>making the event Auspicious by Prof. CK Dwivedi. Tradition continues.</strong>
+                </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c2.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>welcoming 1st year students. another holy act.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c9.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>Once again we have our very free lallan bhaiya who snatched the mic from anchors.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c4.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>Mansi Bisht enthralling audience through her classical art of dance.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c5.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>Audience lends ears to Vipul’s vocal performance.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/b5.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>a very emotional deliverance by Ambarish Singh through his melodious voice.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c6.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>Talents that respect beauty and the art of self-presentation.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c8.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>Showcasing beauty and confidence.</strong>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="/images/c7.png" alt="freshers jk">
+                 <div class="caption">
+                     <strong>"Mharo rajasathan, padharo mhare desh.” spirits of rajasthan witnessed.</strong>
+                 </div>
+             </div>
+         </div>
+         
+     </div>
+  <div class="best">
+      <p><h2>At the end, some of the juniors were awarded with some special titles which are as follows:</h2></p>
+      <p><strong>Mr. FRESHER –</strong> Ayush Raj Srivastava<br>
+      <strong>Miss. FRESHER- </strong>Mansi Bisht<br>
+      <strong>Mr. FUNCTION –</strong>Nasar Ahmad Zafar<br>
+      <strong>Miss. FUNCTION –</strong>Sapna Singh<br>
+      <strong>BEST JUNIORS –</strong>Sneha Kamble and Tarun Manohar<br>
+      <strong>BEST DANCER –</strong>Rishap Verma<br>
+      <strong>BEST SINGER –</strong>Abhishek Pandey<br>
+      <strong>BEST IN DRAMA –</strong>Vipul Vashishtha
+      
+      
+      </p>
+  </div>
+  <div class="footer fts">
+        <header>
+              <a href="http://www.jkinstitute.ac.in/">J.K. Institute of Applied Physics and Technology, University of Allahabad</a>
+        </header>
+        <p>
+          <a href="https://www.facebook.com/exuberance24.10.16/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/groups/3795687/profile" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+          
+        </p>
+  </div>    
+    
+</div>
+
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<% include ./partials/footer %>

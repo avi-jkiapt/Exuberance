@@ -1,0 +1,29 @@
+<%include ./partials/header %>
+<div class="container">
+    <div class="jumbotron" style="text-align:center;padding:1em;margin:20px 20px;">
+        <h1>Batch 2k17 Lists</h1>
+        <p style="margin:30px 30px;">Registered Students ...</p>
+        
+            
+        <table border="1" align="center">
+            <thead style="text-align:right">
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Branch</th>
+            </thead>
+            <tbody>
+                <% juniors.forEach(function(juniors){ %>
+                <tr>
+                    <td style="width:30%"><%= juniors.name %></td>
+                    <td style="width:20%"><%= juniors.number %></td>
+                    <td style="width:20%"><%= juniors.branch %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        
+    </div>
+    
+</div>
+
+<% include ./partials/footer %>
